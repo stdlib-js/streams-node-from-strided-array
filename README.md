@@ -35,30 +35,20 @@ limitations under the License.
 
 > Create a [readable stream][readable-stream] from a strided array-like object.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/streams-node-from-strided-array
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var stridedArrayStream = require( '@stdlib/streams-node-from-strided-array' );
+import stridedArrayStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-from-strided-array@deno/mod.js';
+```
+
+You can also import the following named exports from the package:
+
+```javascript
+import { factory, objectMode } from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-from-strided-array@deno/mod.js';
 ```
 
 <a name="strided-array-stream"></a>
@@ -68,7 +58,7 @@ var stridedArrayStream = require( '@stdlib/streams-node-from-strided-array' );
 Returns a [readable stream][readable-stream] from a strided array-like `object`.
 
 ```javascript
-var inspectStream = require( '@stdlib/streams-node-inspect-sink' );
+import inspectStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-inspect-sink@deno/mod.js';
 
 function log( chunk ) {
     console.log( chunk.toString() );
@@ -103,7 +93,7 @@ var stream = stridedArrayStream( 4, [ 1, 2, 3, 4 ], 1, 0, opts );
 By default, when not operating in [objectMode][object-mode], a returned [stream][stream] delineates individual values using a newline character. To specify an alternative separator, set the `sep` option.
 
 ```javascript
-var inspectStream = require( '@stdlib/streams-node-inspect-sink' );
+import inspectStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-inspect-sink@deno/mod.js';
 
 function log( chunk ) {
     console.log( chunk.toString() );
@@ -121,7 +111,7 @@ stream.pipe( iStream );
 By default, when not operating in [objectMode][object-mode], a returned [stream][stream] serializes values as JSON strings. To specify custom serialization behavior (either to a `string` or `Buffer`), set the `serialize` option.
 
 ```javascript
-var inspectStream = require( '@stdlib/streams-node-inspect-sink' );
+import inspectStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-inspect-sink@deno/mod.js';
 
 function serialize( v ) {
     return 'v::' + v.toString();
@@ -169,7 +159,7 @@ The method accepts the same `options` as [`stridedArrayStream()`](#strided-array
 This method is a convenience function to create [streams][stream] which **always** operate in [objectMode][object-mode].
 
 ```javascript
-var inspectStream = require( '@stdlib/streams-node-inspect-sink' );
+import inspectStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-inspect-sink@deno/mod.js';
 
 function log( v ) {
     console.log( v );
@@ -213,10 +203,10 @@ This method accepts the same `options` as [`stridedArrayStream()`](#strided-arra
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var inspectStream = require( '@stdlib/streams-node-inspect-sink' );
-var randu = require( '@stdlib/random-base-randu' );
-var Float64Array = require( '@stdlib/array-float64' );
-var stridedArrayStream = require( '@stdlib/streams-node-from-strided-array' );
+import inspectStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-inspect-sink@deno/mod.js';
+import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
+import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
+import stridedArrayStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-from-strided-array@deno/mod.js';
 
 function log( v ) {
     console.log( v.toString() );
@@ -273,7 +263,7 @@ stream.pipe( iStream );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -341,7 +331,7 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/streams/node/from-array]: https://github.com/stdlib-js/streams-node-from-array
+[@stdlib/streams/node/from-array]: https://github.com/stdlib-js/streams-node-from-array/tree/deno
 
 <!-- </related-links> -->
 
