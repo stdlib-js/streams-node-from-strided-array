@@ -44,6 +44,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+stridedArrayStream = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-from-strided-array@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/streams-node-from-strided-array/tags). For example,
+
+```javascript
 stridedArrayStream = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-from-strided-array@v0.2.0-umd/browser.js' )
 ```
 
@@ -56,7 +61,7 @@ var stridedArrayStream = require( 'path/to/vendor/umd/streams-node-from-strided-
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-from-strided-array@v0.2.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-from-strided-array@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -227,7 +232,7 @@ This method accepts the same `options` as [`stridedArrayStream()`](#strided-arra
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-inspect-sink@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-from-strided-array@v0.2.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-from-strided-array@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
