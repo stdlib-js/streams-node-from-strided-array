@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import stridedArrayStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-from-strided-array@esm/index.mjs';
+import stridedArrayStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-from-strided-array@v0.2.2-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { factory, objectMode } from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-from-strided-array@esm/index.mjs';
+import { factory, objectMode } from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-from-strided-array@v0.2.2-esm/index.mjs';
 ```
 
 <a name="strided-array-stream"></a>
@@ -211,7 +211,7 @@ This method accepts the same `options` as [`stridedArrayStream()`](#strided-arra
 import inspectStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-inspect-sink@esm/index.mjs';
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
-import stridedArrayStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-from-strided-array@esm/index.mjs';
+import stridedArrayStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-from-strided-array@v0.2.2-esm/index.mjs';
 
 function log( v ) {
     console.log( v.toString() );
