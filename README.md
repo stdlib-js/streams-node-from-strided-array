@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import stridedArrayStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-from-strided-array@deno/mod.js';
+import stridedArrayStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-from-strided-array@v0.2.2-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { factory, objectMode } from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-from-strided-array@deno/mod.js';
+import { factory, objectMode } from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-from-strided-array@v0.2.2-deno/mod.js';
 ```
 
 <a name="strided-array-stream"></a>
@@ -206,7 +206,7 @@ This method accepts the same `options` as [`stridedArrayStream()`](#strided-arra
 import inspectStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-inspect-sink@deno/mod.js';
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import stridedArrayStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-from-strided-array@deno/mod.js';
+import stridedArrayStream from 'https://cdn.jsdelivr.net/gh/stdlib-js/streams-node-from-strided-array@v0.2.2-deno/mod.js';
 
 function log( v ) {
     console.log( v.toString() );
